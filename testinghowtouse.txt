@@ -1,0 +1,3 @@
+create repo by clicking + on right side of search
+create new file or uploading an existing file
+then file name.txt and commit changes
