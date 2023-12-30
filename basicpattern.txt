@@ -1,0 +1,204 @@
+Pattern
+========
+//all pattern will have nested loop
+outer loop is for number of lines
+&inner loop is for column.
+//basic program to print *
+#include<bits/stdc++.h>
+using namespace std;
+int print(int num1){
+    for(int i=0;i<num1;i++){
+        for(int j=0;j<num1;j++){
+            cout << " *";
+        }
+        cout << "\n";
+    } 
+    return 0;   
+}
+int main(){
+    int num;
+    cin >> num;
+    print(num);
+}
+-------------------------------------------------------------------------------------------------------------------
+pattern 2
+
+* 
+* * 
+* * * 
+* * * * 
+* * * * * 
+* * * * * * 
+* * * * * * * 
+
+#include<bits/stdc++.h>
+using namespace std;
+void print(int n){
+    for(int i=0;i<n;i++){
+        for(int j=0;j <= i;j++){
+            cout << "* ";
+        } 
+        cout << "\n";
+    } 
+}
+int main(){
+    int n;
+    cin >> n;
+    print(n);
+}
+----------------------------------------------------------------------------------------------------------------------
+pattern 3
+
+ 0
+ 1 1
+ 2 2 2
+ 3 3 3 3
+ 4 4 4 4 4
+ 5 5 5 5 5 5
+ 6 6 6 6 6 6 6
+
+#include<bits/stdc++.h>
+using namespace std;
+void print(int n){
+    for(int i=0;i<n;i++){
+        for(int j=0;j <= i;j++){
+            cout << " " <<i;
+        } 
+        cout << "\n";
+    } 
+}
+int main(){
+    int n;
+    cin >> n;
+    print(n);
+}
+-----------------------------------------------------------------------------------------------------------------------------
+pattern 4
+
+ 0
+ 0 1
+ 0 1 2
+ 0 1 2 3
+ 0 1 2 3 4
+ 0 1 2 3 4 5
+ 0 1 2 3 4 5 6
+
+#include<bits/stdc++.h>
+using namespace std;
+void print(int n){
+    for(int i=0;i<n;i++){
+        for(int j=0;j <= i;j++){
+            cout << " " <<j;
+        } 
+        cout << "\n";
+    } 
+}
+int main(){
+    int n;
+    cin >> n;
+    print(n);
+}
+-----------------------------------------------------------------------------------------------------------------------------
+pattern 5
+* * * * * * * 
+* * * * * * 
+* * * * * 
+* * * * 
+* * * 
+* * 
+* 
+#include<bits/stdc++.h>
+using namespace std;
+void print(int n){
+    for(int i=n-1;i>=0;i--){
+        for(int j=i;j>=0;j--){
+            cout << "* ";
+        } 
+        cout << "\n";
+    } 
+}
+int main(){
+    int n;
+    cin >> n;
+    print(n);
+}
+
+-----------------------------------------------------------------------------------------------------------------------------
+pattern 6
+ 1 2 3 4 5 6 7
+ 2 3 4 5 6 7
+ 3 4 5 6 7
+ 4 5 6 7
+ 5 6 7
+ 6 7
+ 7
+#include<bits/stdc++.h>
+using namespace std;
+void print(int n){
+    for(int i=1;i<=n;i++){
+        for(int j=i;j<=n-1+1;j++){
+            cout << " " << j;
+        } 
+        cout << "\n";
+    } 
+}
+int main(){
+    int n;
+    cin >> n;
+    print(n);
+}
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+pattern 7
+      *      
+     ***     
+    *****    
+   *******   
+  *********  
+ *********** 
+*************
+*************
+ *********** 
+  *********  
+   *******   
+    *****    
+     ***     
+      *      
+#include<bits/stdc++.h>
+using namespace std;
+void print(int n){
+    for(int i=0;i<n;i++){
+        for(int j=0;j<n-i-1;j++){
+            cout << " ";
+        } 
+        for(int j=0;j<2*i+1;j++){
+            cout << "*";
+
+        }
+        for(int j=0;j<n-i-1;j++){
+            cout << " ";
+        }
+        cout << endl;
+    } 
+        for(int i=n-1;i>=0;i--){
+        for(int j=0;j<n-i-1;j++){
+            cout << " ";
+        } 
+        for(int j=0;j<2*i+1;j++){
+            cout << "*";
+
+        }
+        for(int j=0;j<n-i-1;j++){
+            cout << " ";
+        }
+        cout << endl;
+    } 
+}
+int main(){
+    int n;
+    cin >> n;
+    print(n);
+}
+-----------------------------------------------------------------------------------------------------------------------
+
